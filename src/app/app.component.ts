@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Ifairs } from './interface/fair';
+import { fairsArr } from './model/fairdata';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'io-fairtask';
+  
 }

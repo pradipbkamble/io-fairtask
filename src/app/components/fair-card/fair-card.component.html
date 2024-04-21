@@ -1,0 +1,15 @@
+<div class="card faircard  my-4"
+(click)="ondetails(fairchild)" 
+[ngClass]="{'active':carids ===fairchild.fairId}
+">
+    
+    <h3>{{fairchild.fairName}}</h3>
+    
+  
+    <div class="card-body">
+        <div class="bodybg">
+            <p>{{fairchild.type}}</p>
+        {{fairchild.startDate |date}}
+            </div>
+  </div>
+</div>

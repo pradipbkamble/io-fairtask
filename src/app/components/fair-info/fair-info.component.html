@@ -1,0 +1,16 @@
+
+<img [src]="fordetails.bannerUrl" width="720" height="500">
+<div>
+    <p [innerHTML]="fordetails.candidateDescription">
+    
+    </p>
+    <b>{{fordetails.fairName}}</b>
+    <p>
+        {{((fordetails.endDate *1000)-(24*60*60*1000) |date)}}
+    </p>
+    <p>
+        {{fordetails.fairStartTime}}
+    </p>
+    {{fordetails.fairStatus}}
+    {{fordetails.isCandidateRegistered}}
+</div>

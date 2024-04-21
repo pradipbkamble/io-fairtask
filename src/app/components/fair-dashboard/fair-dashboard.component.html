@@ -1,0 +1,17 @@
+<h1 class="text-center text-uppercase font-size-bold bg-info p-3">
+    fairtask
+</h1>
+<div class="row">
+    
+    <div class="col-md-4">
+        <app-fair-card *ngFor="let faircard of fairdata" [fairchild]="faircard" (forid)="onclick($event)" [carids]="selectedid">
+
+        </app-fair-card>
+    </div>
+
+    <div class="col-md-8">
+        <app-fair-info [fordetails]="faircard">
+
+        </app-fair-info>
+    </div>
+</div>
